@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- EXERCÍCIO AINDA EM CONSTRUÇÃO -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width-initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="style sheet" />
     
-    <header>
+    <body>
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
-    </header>
-
-    <form action="" id="survey-form">
+      
+        <form id="survey-form">
 
         <div>
             <label for="name" id="name-label">Name
@@ -33,7 +28,7 @@
         <div>
             <p>Which option best describes your current role?</p>
             <select id="dropdown" class="" name="role" required="">
-                <option disabled="">Select current role</option>
+                <option value="0">Select current role</option>
                 <option value="student">Student</option>
                 <option value="job">Full Time Job</option>
                 <option value="learner">Full Time Learner</option>
@@ -41,44 +36,49 @@
                 <option value="other">Other</option>
             </select>
         </div>
-
+  
         <div>
             <label><input type="radio" name="user-recommend" id="">Definitely</label>
             <label for="maybe"><input id="maybe" type="radio" name="maybe-radio" value="Maybe"/>Maybe</label>
             <label for="notsure"><input id="notsure" type="radio" name="notsure-radio" value="Not sure"/>Not sure</label>
         </div>
-    
-    <fieldset>
-        <label for="dropdown">What is your favorite feature of freeCodeCamp?
-            <select id="dropdown">
-                <option value="1">Select an option</option>
-                <option value="2">Challenges</option>
-                <option value="3">Projects</option>
-                <option value="4">Community</option>
-                <option value="5">Open Source</option>
+
+        <div>
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select id="" class="" name="role" required="">
+                <option value="0">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="comunity">Comunity</option>
+                <option value="openSource">Open Source</option>
             </select>
-        </label>
-    </fieldset>
+        </div>
 
-    <fieldset>
-        <label for="frontend-projects"><input id="frontend-projects" type="checkbox" name="frontend-projects-checkbox" value="Front-end Projects"/>Front-end Projects</label>
-        <label for="backend-projects"><input id="backend-projects" type="checkbox" name="backend-projects" value="Back-end Projects"/>Back-end Projects</label>
-        <label for="datavisualization"><input id="datavisualization" type="checkbox" name="datavisualization-radio" value="Data Visualization"/>Data Visualization</label>
-        <label for="challenges"><input id="challenges" type="checkbox" name="challenges-radio" value="Challenges"/>Challenges</label>
-        <label for="opensourcecommunity"><input id="opensourcecommunity" type="radio" name="opensourcecommunity-radio" value="Open Source Community"/>Open Source Community</label>
-        <label for="gitterhelprooms"><input id="gitterhelprooms" type="checkbox" name="gitterhelprooms-radio" value="Gitter help rooms"/>Gitter help rooms</label>
-        <label for="videos"><input id="videos" type="checkbox" name="videos-radio" value="Videos"/>Videos</label>
-        <label for="citymeetups"><input id="citymeetups" type="checkbox" name="citymeetups-radio" value="City Meetups"/>City Meetups</label>
-        <label for="wiki"><input id="wiki" type="radio" name="wiki-radio" value="Wiki"/>Wiki</label>
-        <label for="forum"><input id="forum" type="checkbox" name="forum-radio" value="Forum"/>Forum</label>
-        <label for="additionalcourses"><input id="additionalcourses" type="checkbox" name="additionalcourses-radio" value="Additional Courses"/>Additional Courses</label>
-    </fieldset>
-    
-    <fieldset>
-        <label for="bio">Any comments or sugestions?<textarea id="bio" name="bio" rows="3" cols="30" placeholder=""></textarea></label>
-        <input type="submit" value="Submit" id="submit" />
-    </fieldset>
+        <div>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="front-end-projects">Front-end Projects</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="back-end-projects">Back-end Projects</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="data-visualization">Data Visualization</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="challenges">Challenges</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="open-source-community">Open Source Community</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="gitter-help-rooms">Gitter help rooms</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="videos">Videos</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="city-meetups">City Meetups</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="wiki">Wiki</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="forum">Forum</label>
+            <label><input class="input-checkbox" type="checkbox" name="prefer" id="additional-courses">Additional Courses</label>
+        </div>
+  
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
 
-    </form>
-</body>
+        <div>
+            <button id="submit" class="submit-button" type="submit">Submit</button>
+        </div>
+        
+      </form>
+    </body>
+  </head>
 </html>
