@@ -1,0 +1,17 @@
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0A0A23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+header {
+    height: 50px;
+    background-color: #1b1b32;
+    display: flexbox;
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+}
